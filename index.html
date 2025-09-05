@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DevJobs – Tech Job Listing Board</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="logo">DevJobs</div>
+      <nav>
+        <a href="#">Post a Job</a>
+        <a href="#">Login</a>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <h2>Filters</h2>
+        <section>
+          <h3>Role</h3>
+          <div class="filter-chip">
+            <input type="checkbox" id="frontend" />
+            <label for="frontend">Frontend Developer</label>
+          </div>
+          <div class="filter-chip">
+            <input type="checkbox" id="backend" />
+            <label for="backend">Backend Developer</label>
+          </div>
+          <div class="filter-chip">
+            <input type="checkbox" id="fullstack" />
+            <label for="fullstack">Full Stack</label>
+          </div>
+        </section>
+        <section>
+          <h3>Tech Stack</h3>
+          <div class="filter-chip">
+            <input type="checkbox" id="html" /> <label for="html">HTML</label>
+          </div>
+          <div class="filter-chip">
+            <input type="checkbox" id="css" /> <label for="css">CSS</label>
+          </div>
+          <div class="filter-chip">
+            <input type="checkbox" id="js" /> <label for="js">JavaScript</label>
+          </div>
+          <div class="filter-chip">
+            <input type="checkbox" id="react" />
+            <label for="react">React</label>
+          </div>
+        </section>
+        <section>
+          <h3>Location</h3>
+          <div class="filter-chip">
+            <input type="checkbox" id="remote" />
+            <label for="remote">Remote</label>
+          </div>
+          <div class="filter-chip">
+            <input type="checkbox" id="bangalore" />
+            <label for="bangalore">Bangalore</label>
+          </div>
+          <div class="filter-chip">
+            <input type="checkbox" id="hyd" />
+            <label for="hyd">Hyderabad</label>
+          </div>
+        </section>
+        <section>
+          <h3>Experience</h3>
+          <div class="filter-chip">
+            <input type="checkbox" id="fresher" />
+            <label for="fresher">Fresher</label>
+          </div>
+          <div class="filter-chip">
+            <input type="checkbox" id="mid" />
+            <label for="mid">1–3 Years</label>
+          </div>
+          <div class="filter-chip">
+            <input type="checkbox" id="senior" />
+            <label for="senior">3+ Years</label>
+          </div>
+        </section>
+      </aside>
+
+      <main class="main">
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Search jobs by role, company, or location..."
+          />
+          <button><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+        </div>
+
+        <section class="jobs">
+          <article class="job-card">
+            <div class="job-info">
+              <h3>Frontend Developer</h3>
+              <p class="company">TechNova Pvt Ltd</p>
+              <p class="location">
+                <i class="fa-solid fa-location-dot"></i> Bangalore
+              </p>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span
+                ><span>React</span>
+              </div>
+            </div>
+            <button class="apply-btn">Apply</button>
+          </article>
+
+          <article class="job-card">
+            <div class="job-info">
+              <h3>Backend Developer</h3>
+              <p class="company">InnoSoft Solutions</p>
+              <p class="location">
+                <i class="fa-solid fa-location-dot"></i> Hyderabad
+              </p>
+              <div class="tags">
+                <span>Node.js</span><span>Express</span><span>MongoDB</span>
+              </div>
+            </div>
+            <button class="apply-btn">Apply</button>
+          </article>
+
+          <article class="job-card">
+            <div class="job-info">
+              <h3>Full Stack Engineer</h3>
+              <p class="company">CloudWorks</p>
+              <p class="location">
+                <i class="fa-solid fa-location-dot"></i> Remote
+              </p>
+              <div class="tags">
+                <span>React</span><span>Node.js</span><span>SQL</span>
+              </div>
+            </div>
+            <button class="apply-btn">Apply</button>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
